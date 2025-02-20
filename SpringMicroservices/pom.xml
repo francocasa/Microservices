@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-parent</artifactId>
-      <version>3.4.2</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.4.2</version>
     </parent>
 
     <groupId>com.mycompany.app</groupId>
@@ -17,9 +17,10 @@
     <packaging>pom</packaging>
 
     <modules>
-      <module>microservice-gateway</module>
-      <module>microservice-eureka</module>
-      <module>microservice-config</module>
+        <module>microservice-gateway</module>
+        <module>microservice-eureka</module>
+        <module>microservice-config</module>
+        <module>microservice-student</module>
     </modules>
 
     <properties>
@@ -28,22 +29,21 @@
     </properties>
 
     <dependencies>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.18.36</version>
-    </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
-      <pluginManagement>
-        <plugins>
-          <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-            <version>3.4.2</version>
-          </plugin>
-        </plugins>
-      </pluginManagement>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>3.4.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 </project>
